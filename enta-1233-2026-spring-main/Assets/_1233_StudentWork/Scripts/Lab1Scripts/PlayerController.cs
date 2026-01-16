@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CharacterController _characterControl;
     //Gets the players input and direction
     private Vector2 _input;
-    private Vector3 _direction;
+    [SerializeField] private Vector3 _direction;
 
     //Variables that smooth turning
     [SerializeField] private float smoothTime = 0.05f;
@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     private float _gravity = -9.81f;
     [SerializeField] private float _gravMult = 3f;
     private float _velocity;
+
+    //
+    [SerializeField] private float jumpForce;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,7 +46,15 @@ public class PlayerController : MonoBehaviour
     //Makes player victim to Issac Newton (become affected by gravity)
     private void ApplyGravity()
     {
-        _velocity += _gravity * _gravMult * Time.deltaTime;
+        //Makes sure gravity does not build up while grounded
+        if (_characterControl.isGrounded && _velocity < 0f)
+        {
+            _velocity = -1f;
+        }
+        else
+        {
+            _velocity += _gravity * _gravMult * Time.deltaTime;
+        }
         _direction.y = _velocity;
     }
 
@@ -73,5 +84,15 @@ public class PlayerController : MonoBehaviour
         //Checks the movement key pressed and moves in the direction the key was assigned to
         _input = context.ReadValue<Vector2>();
         _direction = new Vector3(_input.x, 0, _input.y);
+    }
+
+    //When the jump key is pressed
+    public void Jump(InputAction.CallbackContext context)
+    {
+        //Makes sure the player cant jump when either theyve already pressed space or is midair
+        if (!context.started) return;
+        if (!_characterControl.isGrounded) return;
+
+        _velocity += jumpForce;
     }
 }
