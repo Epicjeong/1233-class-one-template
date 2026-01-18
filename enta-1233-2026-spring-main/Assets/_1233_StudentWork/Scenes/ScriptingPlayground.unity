@@ -401,8 +401,9 @@ MonoBehaviour:
   _direction: {x: 0, y: 0, z: 0}
   smoothTime: 0.05
   _speed: 5
-  _gravMult: 3
+  _gravMult: 1
   jumpForce: 5
+  _maxJumps: 2
 --- !u!143 &232510203
 CharacterController:
   m_ObjectHideFlags: 0

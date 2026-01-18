@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,8 +24,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _gravMult = 3f;
     private float _velocity;
 
-    //
+    //Variables for jumping and double jumping
     [SerializeField] private float jumpForce;
+    [SerializeField] private int _maxJumps = 2;
+    private int _numberOfJumps;
+    private bool IsGrounded() => _characterControl.isGrounded;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -89,10 +93,22 @@ public class PlayerController : MonoBehaviour
     //When the jump key is pressed
     public void Jump(InputAction.CallbackContext context)
     {
-        //Makes sure the player cant jump when either theyve already pressed space or is midair
+        //Makes sure the player cant jump when they either have no jumps left or is midair
         if (!context.started) return;
-        if (!_characterControl.isGrounded) return;
+        if (!IsGrounded() && _numberOfJumps >= _maxJumps) return;
+        if (_numberOfJumps == 0)
+        {
+            StartCoroutine(WaitForLanding());
+        }
 
-        _velocity += jumpForce;
+        _numberOfJumps++;
+        _velocity = jumpForce;
+    }
+
+    private IEnumerator WaitForLanding()
+    {
+        yield return new WaitUntil(() => !IsGrounded());
+        yield return new WaitUntil(IsGrounded);
+        _numberOfJumps = 0;
     }
 }
