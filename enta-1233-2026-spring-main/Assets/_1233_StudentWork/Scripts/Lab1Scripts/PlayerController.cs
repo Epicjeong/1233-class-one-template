@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
         ApplyRotation();
         //Moves player
         Movement();
+        //Animates player
+        AnimParameters();
     }
 
     //Makes player victim to Issac Newton (become affected by gravity)
@@ -110,5 +112,14 @@ public class PlayerController : MonoBehaviour
         yield return new WaitUntil(() => !IsGrounded());
         yield return new WaitUntil(IsGrounded);
         _numberOfJumps = 0;
+    }
+
+    [SerializeField] private Animator _animator;
+
+    private static readonly int Speed = Animator.StringToHash("Speed");
+
+    private void AnimParameters()
+    {
+        _animator.SetFloat(Speed, _input.sqrMagnitude);
     }
 }
