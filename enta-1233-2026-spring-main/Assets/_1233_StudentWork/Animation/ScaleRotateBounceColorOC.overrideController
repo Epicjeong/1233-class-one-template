@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ScaleRotateBounceColorOC
+  m_Controller: {fileID: 9100000, guid: 2c52306f7f6bf9143b77262b0ef845a9, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0bf025bd683af6041bb45c71cfbddec9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ae5853cb2f7238443bcf11682e12332b, type: 2}
