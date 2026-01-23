@@ -117,9 +117,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     private static readonly int Speed = Animator.StringToHash("Speed");
+    private static readonly int Velocity = Animator.StringToHash("Velocity");
 
     private void AnimParameters()
     {
         _animator.SetFloat(Speed, _input.sqrMagnitude);
+        _animator.SetFloat(Velocity, _velocity);
     }
 }
