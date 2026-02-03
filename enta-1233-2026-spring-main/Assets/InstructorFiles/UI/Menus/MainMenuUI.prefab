@@ -527,6 +527,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0954cae6f37d85d4b89c439913315a3b, type: 3}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _hoverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b3ba368ae2901d42b0d1710bef619fb, type: 3}
     - target: {fileID: 9062268850994271006, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
       propertyPath: m_text
       value: Start
@@ -676,6 +684,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0954cae6f37d85d4b89c439913315a3b, type: 3}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _hoverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b3ba368ae2901d42b0d1710bef619fb, type: 3}
     - target: {fileID: 9062268850994271006, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
       propertyPath: m_text
       value: Quit
@@ -814,6 +830,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0954cae6f37d85d4b89c439913315a3b, type: 3}
+    - target: {fileID: 7477449386200667618, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
+      propertyPath: _hoverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b3ba368ae2901d42b0d1710bef619fb, type: 3}
     - target: {fileID: 9062268850994271006, guid: e0d6ad42ec9824eeab85aa7c923765b7, type: 3}
       propertyPath: m_text
       value: Settings

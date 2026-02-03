@@ -14,6 +14,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-5038359017312261465
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: f6007c05850fb6c408c935d4133d5394
+  m_EffectName: Attenuation
+  m_MixLevel: 3858dc22e0698444698a373da4fb2b03
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-3604748493470333613
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -80,11 +94,31 @@ AudioMixerGroupController:
   m_GroupID: d0d11369ff20642198a2d8ecb9db7693
   m_Children:
   - {fileID: 8054183815809566176}
+  - {fileID: -1573608572097748828}
   m_Volume: bd57178483ca240709dbd4918d0f9bfd
   m_Pitch: 2cdd5159eb878480d8cf530cca1e779f
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 4427372204139443219}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &-1573608572097748828
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jump
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c203c8e32d3671b4db447cbfe2d33b16
+  m_Children: []
+  m_Volume: cbc0643b8d973bc40bc0fab9283dadaa
+  m_Pitch: 7dc9f3ab46769a74e9e72ab7c87c9445
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -5038359017312261465}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -117,6 +151,7 @@ AudioMixerController:
     - d0d11369ff20642198a2d8ecb9db7693
     - e50ec3797535f4a269c79c29a46018bb
     - d1d3e886077c15548af110917e2210a3
+    - c203c8e32d3671b4db447cbfe2d33b16
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -164,7 +199,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 2086100d4f5d54b44b2fab4e89273ffb
-  m_FloatValues: {}
+  m_FloatValues:
+    188495672c974447a837e2a61ca94ff3: 6.7923827
   m_TransitionOverrides: {}
 --- !u!244 &4427372204139443219
 AudioMixerEffectController:

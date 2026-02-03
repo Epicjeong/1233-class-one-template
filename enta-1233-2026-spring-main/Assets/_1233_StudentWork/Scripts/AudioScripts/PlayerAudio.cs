@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerAudio : MonoBehaviour
 {
     [SerializeField] private AudioSource _footstepSource;
+    [SerializeField] private AudioSource _jumpSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,5 +19,10 @@ public class PlayerAudio : MonoBehaviour
     public void PlayFootstep()
     {
         _footstepSource?.Play();
+    }
+
+    public void PlayJump()
+    {
+        _jumpSource?.Play();
     }
 }
