@@ -14,10 +14,10 @@ public class InputMgr : Singleton<InputMgr>
     
     InputAction _pauseAction;
 
-    private void Start() {
-        _pauseAction = InputSystem.actions.FindAction("Pause");
-        _pauseAction.performed += OnPauseAction;
-    }
+    //private void Start() {
+    //    _pauseAction = InputSystem.actions.FindAction("Pause");
+    //    _pauseAction.performed += OnPauseAction;
+    //}
 
     private void OnPauseAction(InputAction.CallbackContext context)
     {
