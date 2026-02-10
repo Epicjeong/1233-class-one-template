@@ -33,9 +33,9 @@ public class GameStarter : MonoBehaviour
         Debug.Log("Waiting for loading");
         yield return new WaitUntil(() => PlayerMgr.Instance.HasSpawnedPlayer);
 
-        Debug.Log("THE WORLD WILL EXPLODE IN 3 SECONDS");
-        yield return new WaitForSeconds(3f);
+        //Debug.Log("THE WORLD WILL EXPLODE IN 3 SECONDS");
+        //yield return new WaitForSeconds(3f);
 
-        Debug.Log("explosion dot jay peg");
+        //Debug.Log("explosion dot jay peg");
     }
 }
