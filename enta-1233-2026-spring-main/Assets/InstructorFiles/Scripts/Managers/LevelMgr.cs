@@ -31,4 +31,9 @@ public class LevelMgr : Singleton<LevelMgr>
 
         IsLevelLoaded = true;
     }
+
+    public int NextLevel()
+    {
+        return _currentLevelIndex++;
+    }
 }
