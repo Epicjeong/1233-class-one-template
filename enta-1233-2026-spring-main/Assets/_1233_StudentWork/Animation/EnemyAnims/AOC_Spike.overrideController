@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AOC_Spike
+  m_Controller: {fileID: 9100000, guid: 62071dbb343cc57408647ceedafe5fd4, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 5b51483fe2ae82840b96c4ae09fe6beb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6fada02ef71162149b340e49fa800a51, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 0be676416f2a6164fbec12e2f683db0e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 25f563d4e6b57de4e8fa9ae08b07785c, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: ef10413f86349004ba9783a9c241717e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 814757d466beeb741bbfbd29a91a9e4f, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: b8dfa45623c17574db1671f8d6aaf82c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b854bf3b9cef1df48b9be0640e3e2b60, type: 3}

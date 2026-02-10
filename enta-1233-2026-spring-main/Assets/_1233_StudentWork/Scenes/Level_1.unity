@@ -297,9 +297,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 416186077184034648, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546651758404063784, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3993329434772364154, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
       propertyPath: m_Name
       value: CameraSwitcherinator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993329434772364154, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485711499452660636, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180165198521027392, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6012155576662454919, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -341,6 +361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6765146215990672110, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7537768102135733868, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
       propertyPath: m_Size.z
       value: 25
@@ -348,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 7537768102135733868, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
       propertyPath: m_Center.z
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691184861863540172, guid: e2d50b873c399ef4cb5c9e778987a2f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -417,6 +445,10 @@ PrefabInstance:
     - target: {fileID: 4802087752903702831, guid: 0a73df971e4db50428d8ddb76b24b81f, type: 3}
       propertyPath: m_Name
       value: KillBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802087752903702831, guid: 0a73df971e4db50428d8ddb76b24b81f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -601,7 +633,7 @@ GameObject:
   - component: {fileID: 1775955957}
   - component: {fileID: 1775955956}
   - component: {fileID: 1775955955}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,6 +752,10 @@ PrefabInstance:
     - target: {fileID: 1639832121975293748, guid: 62ea7c8cd3a1cbe43aaeb81a35b7c3ea, type: 3}
       propertyPath: m_Name
       value: WinBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639832121975293748, guid: 62ea7c8cd3a1cbe43aaeb81a35b7c3ea, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6109864919693546205, guid: 62ea7c8cd3a1cbe43aaeb81a35b7c3ea, type: 3}
       propertyPath: m_LocalPosition.x
