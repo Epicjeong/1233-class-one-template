@@ -29,18 +29,21 @@ public class DetectionSystem : MonoBehaviour
     public bool IsTargetInDetectionRange(Transform target)
     {
         if (target == null) return false;
-        return Vector3.Distance(transform.position, target.position) <= DetectionRange;
+        return Vector3.Distance(transform.position, target.position) <= _detectionRange;
     }
 
     public bool HasLineOfSight(Transform target)
     {
         if (target == null) return false;
 
-        var directionToTarget = (target.position = _eyePosition.position).normalized;
+        var directionToTarget = (target.position - _eyePosition.position).normalized;
         var distanceToTarget = Vector3.Distance(_eyePosition.position, target.position);
 
+        if (Vector3.Angle(transform.forward, directionToTarget) > _fieldOfView / 2) return false;
+
         if (Physics.Raycast(_eyePosition.position, directionToTarget, out var hit, distanceToTarget, _obstructionMask))
-            if (hit.transform != target && !hit.transform.IsChildOf(target)) return false;
+            if (hit.transform != target && !hit.transform.IsChildOf(target))
+                return false;
         return true;
     }
 }

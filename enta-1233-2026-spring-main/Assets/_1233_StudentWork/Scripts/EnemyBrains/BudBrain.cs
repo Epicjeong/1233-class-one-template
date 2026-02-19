@@ -39,7 +39,7 @@ public class BudBrain : MonoBehaviour
         {
             case FireMode.FiredAxis:
                 if (_weapon.CanFire)
-                    _animatior?.TriggerAttack();
+                    _animatior.TriggerAttack();
                 _weapon.Fire(transform.TransformDirection(_fixedAxis), true);
                 break;
 
@@ -75,7 +75,7 @@ public class BudBrain : MonoBehaviour
             _rotater?.FacePosition(targetPos);
             if (_weapon.CanFire)
             {
-                _animatior?.TriggerAttack();
+                _animatior.TriggerAttack();
                 _weapon.Fire(targetPos);
             }
         }
@@ -93,8 +93,8 @@ public class BudBrain : MonoBehaviour
             _rotater?.FacePosition(targetPos);
             if (_weapon.CanFire)
             {
-                _animatior?.TriggerAttack();
-                _weapon.Fire(targetPos);
+                _animatior.TriggerAttack();
+                _weapon.FireArc(targetPos);
             }
         }
     }

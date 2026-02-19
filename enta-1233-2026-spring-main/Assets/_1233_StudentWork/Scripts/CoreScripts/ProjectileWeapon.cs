@@ -8,11 +8,11 @@ public class ProjectileWeapon : MonoBehaviour, IWeapon
     [SerializeField] private float _arcHeight = 2f;
 
     private float _nextFireTime;
-    public bool CanFire => Time.time > _nextFireTime;
+    public bool CanFire => Time.time >= _nextFireTime;
 
     public void Fire(Vector3 targetPosition)
     {
-        if (CanFire) return;
+        if (!CanFire) return;
         _nextFireTime = Time.time + 1 / _fireRate;
         var direction = (targetPosition - _muzzle.position).normalized;
         SpawnProjectile(direction);
@@ -20,7 +20,7 @@ public class ProjectileWeapon : MonoBehaviour, IWeapon
 
     public void Fire(Vector3 direction, bool useDirection)
     {
-        if (CanFire) return;
+        if (!CanFire) return;
         _nextFireTime = Time.time + 1 / _fireRate;
         SpawnProjectile(direction);
     }
@@ -51,6 +51,6 @@ public class ProjectileWeapon : MonoBehaviour, IWeapon
         var velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * height);
         var velocityXZ = displacementXZ / time;
 
-        return velocityXZ + velocityY * Mathf.Sign(gravity);
+        return velocityXZ + velocityY * -Mathf.Sign(gravity);
     }
 }

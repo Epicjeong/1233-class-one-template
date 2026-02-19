@@ -24,16 +24,22 @@ public class TrainingDummyBrain : MonoBehaviour
 
     public void OnDisable()
     {
-        _health.OnDamaged -= HandleDamaged;
-        _health.OnDied -= HandleDied;
+        if (_health != null)
+        {
+            _health.OnDamaged -= HandleDamaged;
+            _health.OnDied -= HandleDied;
+        }
     }
 
     private void HandleDamaged(DamageInfo info)
     {
-        Debug.Log($"Dummy hit by " + 
+        if (_health != null)
+        {
+            Debug.Log($"Dummy hit by " +
             $"{info.Source?.name ?? "Unknown"}" +
-            $"for {info.Amount} damage. " + 
+            $"for {info.Amount} damage. " +
             $"HP: {_health.CurrentHealth}/{_health.MaxHealth}");
+        }
     }
     private void HandleDied()
     {
