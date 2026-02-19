@@ -22,5 +22,34 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject == _source) return;
 
         var damageReciever = collision.gameObject.GetComponent<IDamageReciever>();
+        if (damageReciever != null)
+        {
+            var info = new DamageInfo
+            {
+                Amount = _damage,
+                Source = _source,
+                HitPoint = collision.contacts[0].point,
+                HitNormal = collision.contacts[0].normal
+            };
+            damageReciever.ApplyDamage(info);
+        }
+        Destroy(gameObject);
     }
+
+    public void Launch(Vector3 direction, GameObject source)
+    {
+        _source = source;
+        _rb.linearVelocity = direction.normalized * _speed;
+        transform.forward = direction;
+        Destroy(gameObject, _lifetime);
+    }
+    public void LaunchWithVelocity(Vector3 velocity, GameObject source)
+    {
+        _source = source;
+        _rb.linearVelocity = velocity;
+        if (velocity.sqrMagnitude > 0.0001f) transform.forward = velocity;
+        _rb.useGravity = true;
+        Destroy(gameObject, _lifetime);
+    }
+
 }

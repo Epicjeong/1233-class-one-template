@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface IWeapon
 {
-    bool canFire { get; }
+    bool CanFire { get; }
     void Fire(Vector3 targetPosition);
     void Fire(Vector3 direction, bool useDirection);
 }
