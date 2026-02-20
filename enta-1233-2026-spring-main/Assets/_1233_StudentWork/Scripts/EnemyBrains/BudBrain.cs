@@ -15,7 +15,7 @@ public class BudBrain : MonoBehaviour
     [SerializeField] private ProjectileWeapon _weapon;
     [SerializeField] private DetectionSystem _detection;
     [SerializeField] private RotateToTarget _rotater;
-    [SerializeField] private EnemyAnimDriver _animatior;
+    [SerializeField] private EnemyAnimDriver _animDriver;
 
     [Header ("Settings")]
     [SerializeField] private FireMode _mode = FireMode.DirectAim;
@@ -28,7 +28,7 @@ public class BudBrain : MonoBehaviour
     {
         _targetProvider = GetComponent<ITargetProvider>();
         if (_health == null) _health = GetComponent<Health>();
-        if (_animatior == null) _animatior = GetComponent<EnemyAnimDriver>();
+        if (_animDriver == null) _animDriver = GetComponent<EnemyAnimDriver>();
     }
 
     private void Update()
@@ -39,7 +39,7 @@ public class BudBrain : MonoBehaviour
         {
             case FireMode.FiredAxis:
                 if (_weapon.CanFire)
-                    _animatior.TriggerAttack();
+                    _animDriver.TriggerAttack();
                 _weapon.Fire(transform.TransformDirection(_fixedAxis), true);
                 break;
 
@@ -75,7 +75,7 @@ public class BudBrain : MonoBehaviour
             _rotater?.FacePosition(targetPos);
             if (_weapon.CanFire)
             {
-                _animatior.TriggerAttack();
+                _animDriver.TriggerAttack();
                 _weapon.Fire(targetPos);
             }
         }
@@ -93,7 +93,7 @@ public class BudBrain : MonoBehaviour
             _rotater?.FacePosition(targetPos);
             if (_weapon.CanFire)
             {
-                _animatior.TriggerAttack();
+                _animDriver.TriggerAttack();
                 _weapon.FireArc(targetPos);
             }
         }
