@@ -39,6 +39,7 @@ public class TrainingDummyBrain : MonoBehaviour
             $"{info.Source?.name ?? "Unknown"}" +
             $"for {info.Amount} damage. " +
             $"HP: {_health.CurrentHealth}/{_health.MaxHealth}");
+            _animDriver.TriggerHit();
         }
     }
     private void HandleDied()
@@ -47,6 +48,7 @@ public class TrainingDummyBrain : MonoBehaviour
         if (_autoReset)
         {
             Invoke(nameof(ResetDummy), _resetDelay);
+            _animDriver.TriggerDie();
         }
     }
 

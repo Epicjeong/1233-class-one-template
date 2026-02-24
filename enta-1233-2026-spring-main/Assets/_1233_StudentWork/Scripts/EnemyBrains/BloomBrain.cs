@@ -1,45 +1,44 @@
-using NUnit.Framework.Constraints;
 using UnityEngine;
+using static BudBrain;
 
-public class SnakeBrain : MonoBehaviour
+public class BloomBrain : MonoBehaviour
 {
-
     [Header("Components")]
     [SerializeField] private EnemyStateMachine _stateMachine;
 
     [SerializeField] private Health _health;
+    [SerializeField] private ProjectileWeapon _weapon;
     [SerializeField] private DetectionSystem _detection;
     [SerializeField] private RotateToTarget _rotater;
     [SerializeField] private EnemyAnimDriver _animDriver;
 
     [Header("Settings")]
-    [SerializeField] private float _attackRange = 2f;
+    [SerializeField] private float _attackRange = 10f;
 
-    [SerializeField] private float _attackCooldown = 2f;
-    [SerializeField] private int _damage = 15;
+    [SerializeField] private float _stopRange = 8f;
 
-    public IMover Mover {  get; private set; }
-
+    public IMover Mover { get; private set; }
     public DetectionSystem DetectionSystem => _detection;
     public EnemyAnimDriver AnimDriver => _animDriver;
     public RotateToTarget Rotater => _rotater;
     public ITargetProvider TargetProvider { get; private set; }
     public float AttackRange => _attackRange;
-    public float AttackCooldown => _attackCooldown;
-    public int Damage => _damage;
+    public ProjectileWeapon Weapon => _weapon;
+    public float StopRange => _stopRange;
 
     private void Awake()
     {
         TargetProvider = GetComponent<ITargetProvider>();
         Mover = GetComponent<IMover>();
-        if (_stateMachine == null) GetComponent<EnemyStateMachine>();
+        if (_stateMachine == null) _stateMachine = GetComponent<EnemyStateMachine>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        _stateMachine.Initialize(new SnakeChaseState(this, _stateMachine));
+        _stateMachine.Initialize(new BloomMoveState(this, _stateMachine));
     }
+
     private void OnEnable()
     {
         if (_health != null) _health.OnDied += HandleDied;

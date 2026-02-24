@@ -12,7 +12,7 @@ public class SnakeAttackState : EnemyState
 
     public override void Enter()
     {
-        _brain._mover.Stop();
+        _brain.Mover.Stop();
         _brain.AnimDriver.SetSpeed(0);
         _brain.AnimDriver.TriggerAttack();
 
@@ -23,8 +23,8 @@ public class SnakeAttackState : EnemyState
 
     public override void Tick()
     {
-        var target = _brain._targetProvider.GetTarget();
-        var targetPos = _brain._targetProvider.GetTargetPosition();
+        var target = _brain.TargetProvider.GetTarget();
+        var targetPos = _brain.TargetProvider.GetTargetPosition();
         if (target != null) _brain.Rotater.FacePosition(targetPos);
 
         if (Time.time > _exitTime) Machine.ChangeState(new SnakeChaseState(_brain, Machine));
@@ -32,7 +32,7 @@ public class SnakeAttackState : EnemyState
 
     private void ApplyMeleeDamage()
     {
-        var target = _brain._targetProvider.GetTarget();
+        var target = _brain.TargetProvider.GetTarget();
         if (target == null) return;
 
         if (Vector3.Distance(_brain.transform.position, target.position) <= _brain.AttackRange + 0.5f)

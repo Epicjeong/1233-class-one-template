@@ -11,13 +11,13 @@ public class SnakeChaseState : EnemyState
 
     public override void Tick()
     {
-        var target = _brain._targetProvider.GetTarget();
+        var target = _brain.TargetProvider.GetTarget();
         if (target == null) return;
 
-        _brain?._mover.SetDestination(target.position);
+        _brain?.Mover.SetDestination(target.position);
 
-        if (_brain._mover != null)
-            _brain.AnimDriver.SetSpeed(_brain._mover.Velocity.magnitude);
+        if (_brain.Mover != null)
+            _brain.AnimDriver.SetSpeed(_brain.Mover.Velocity.magnitude);
         else
             _brain.AnimDriver.SetSpeed(0);
 
