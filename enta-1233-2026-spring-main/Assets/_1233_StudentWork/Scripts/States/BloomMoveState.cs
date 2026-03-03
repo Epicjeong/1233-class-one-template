@@ -20,6 +20,7 @@ public class BloomMoveState : EnemyState
         if (hasLOS && distance <= _brain.AttackRange)
         {
             Machine.ChangeState(new BloomAttackState(_brain, Machine));
+            _brain.Mover.Stop();
             return;
         }
 
