@@ -37,6 +37,7 @@ public class BloomAttackState : EnemyState
         _brain.Rotater.FaceDirection(targetPos);
         if (_brain.Weapon.CanFire)
         {
+            _brain.Mover.Stop();
             _brain.AnimDriver.TriggerAttack();
             _brain.Weapon.Fire(targetPos);
         }

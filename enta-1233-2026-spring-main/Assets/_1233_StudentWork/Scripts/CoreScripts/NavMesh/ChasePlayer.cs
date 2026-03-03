@@ -24,8 +24,8 @@ public class ChasePlayer : MonoBehaviour, IMover
 
     public void SetDestination(Vector3 destination)
     {
-        var target = TargetProvider.GetTarget();
-        _agent?.SetDestination(target.position);
+        //var target = TargetProvider.GetTarget();
+        _agent?.SetDestination(destination);
     }
 
     public void Stop()
