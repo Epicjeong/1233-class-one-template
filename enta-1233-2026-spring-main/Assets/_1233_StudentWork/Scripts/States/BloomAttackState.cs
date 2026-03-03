@@ -40,6 +40,7 @@ public class BloomAttackState : EnemyState
             _brain.Mover.Stop();
             _brain.AnimDriver.TriggerAttack();
             _brain.Weapon.Fire(targetPos);
+            _brain.Weapon2.Fire(targetPos);
         }
 
         if (distance < _brain.StopRange - 1f)

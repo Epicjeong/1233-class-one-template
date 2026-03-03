@@ -25,8 +25,11 @@ public class BloomMoveState : EnemyState
         }
 
         _brain.Mover?.SetDestination(target.position);
-        if (_brain.Mover != null) 
+        if (_brain.Mover != null)
+        {
             _brain.AnimDriver.SetSpeed(_brain.Mover.Velocity.magnitude);
+            _brain.AnimDriver.TriggerMove();
+        }
         else
             _brain.AnimDriver.SetSpeed(0);
     }

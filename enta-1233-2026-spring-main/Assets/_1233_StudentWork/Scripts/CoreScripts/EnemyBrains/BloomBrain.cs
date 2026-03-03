@@ -8,6 +8,7 @@ public class BloomBrain : MonoBehaviour
 
     [SerializeField] private Health _health;
     [SerializeField] private ProjectileWeapon _weapon;
+    [SerializeField] private ProjectileWeapon _weapon2;
     [SerializeField] private DetectionSystem _detection;
     [SerializeField] private RotateToTarget _rotater;
     [SerializeField] private EnemyAnimDriver _animDriver;
@@ -24,6 +25,7 @@ public class BloomBrain : MonoBehaviour
     public ITargetProvider TargetProvider { get; private set; }
     public float AttackRange => _attackRange;
     public ProjectileWeapon Weapon => _weapon;
+    public ProjectileWeapon Weapon2 => _weapon2;
     public float StopRange => _stopRange;
 
     private void Awake()

@@ -15,6 +15,7 @@ public class SnakeChaseState : EnemyState
         if (target == null) return;
 
         _brain?.Mover.SetDestination(target.position);
+        _brain.AnimDriver.TriggerMove();
 
         if (_brain.Mover != null)
             _brain.AnimDriver.SetSpeed(_brain.Mover.Velocity.magnitude);

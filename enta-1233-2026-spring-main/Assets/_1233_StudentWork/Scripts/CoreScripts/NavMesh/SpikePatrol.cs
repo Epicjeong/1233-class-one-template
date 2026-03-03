@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class SpikePatrol : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private EnemyAnimDriver _animDriver;
     public Transform[] _patrolPoints;
     public Vector3 Velocity => _agent.velocity;
     public bool HasPath => _agent.hasPath;
@@ -21,6 +22,7 @@ public class SpikePatrol : MonoBehaviour
     {
         var target = _patrolPoints[_nextPoint];
         _agent?.SetDestination(target.position);
+        _animDriver.TriggerMove();
     }
 
     private void Update()

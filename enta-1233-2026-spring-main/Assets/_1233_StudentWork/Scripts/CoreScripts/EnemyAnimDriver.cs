@@ -7,6 +7,7 @@ public class EnemyAnimDriver : MonoBehaviour
     public static readonly int AttackTriggerHash = Animator.StringToHash("Attack");
     public static readonly int HitTriggerHash = Animator.StringToHash("Hit");
     public static readonly int DieTriggerHash = Animator.StringToHash("Die");
+    public static readonly int MoveTriggerHash = Animator.StringToHash("Move");
     [SerializeField] private Animator _animator;
 
     public void Awake()
@@ -40,5 +41,10 @@ public class EnemyAnimDriver : MonoBehaviour
     {
         if (_animator == null) return;
         _animator.SetTrigger(DieTriggerHash);
+    }
+    public void TriggerMove()
+    {
+        if (_animator == null) return;
+        _animator.SetTrigger(MoveTriggerHash);
     }
 }
