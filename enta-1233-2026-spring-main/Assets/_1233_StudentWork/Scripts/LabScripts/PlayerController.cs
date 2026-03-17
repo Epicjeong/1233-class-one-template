@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int _maxJumps = 2;
     private int _numberOfJumps;
     private bool IsGrounded() => _characterControl.isGrounded;
+    
+    [SerializeField] private ProjectileWeapon _weapon;
+    [SerializeField] private GameObject _target;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -105,6 +108,20 @@ public class PlayerController : MonoBehaviour
 
         _numberOfJumps++;
         _velocity = jumpForce;
+    }
+
+    public void Aim(InputAction.CallbackContext context)
+    {
+        if (_weapon.CanFire)
+        {
+            _target.SetActive(true);
+            if (context.canceled)
+            {
+                _weapon.Fire(_target.transform.position);
+                _target.SetActive(false);
+            }
+        }
+        
     }
 
     private IEnumerator WaitForLanding()

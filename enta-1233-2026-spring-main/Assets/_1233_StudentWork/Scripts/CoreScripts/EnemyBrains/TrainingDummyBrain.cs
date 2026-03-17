@@ -6,6 +6,7 @@ public class TrainingDummyBrain : MonoBehaviour
     [SerializeField] private EnemyAnimDriver _animDriver;
     [SerializeField] private float _resetDelay = 2f;
     [SerializeField] private bool _autoReset = true;
+    [SerializeField] private GameObject _door;
 
     public void Awake()
     {
@@ -40,6 +41,7 @@ public class TrainingDummyBrain : MonoBehaviour
             $"for {info.Amount} damage. " +
             $"HP: {_health.CurrentHealth}/{_health.MaxHealth}");
             _animDriver.TriggerHit();
+            _door.SetActive(false);
         }
     }
     private void HandleDied()

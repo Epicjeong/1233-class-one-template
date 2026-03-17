@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3547976923124440334}
   - component: {fileID: 2782880320513940911}
   - component: {fileID: 7661596369641300199}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 416186077184034648}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.26, z: 0.98}
-  m_LocalScale: {x: 1, y: 7.183231, z: 6.1957603}
+  m_LocalPosition: {x: 0, y: 13.093, z: -1.81}
+  m_LocalScale: {x: 1, y: 12.353449, z: 6.1957603}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6012155576662454919}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827020691584785240}
   - component: {fileID: 5505196834386543084}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VirtualCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,13 +133,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546651758404063784}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.41492024, y: -0, z: -0, w: 0.9098578}
-  m_LocalPosition: {x: -6.1400003, y: 10.09, z: -8.210001}
+  m_LocalRotation: {x: 0.5532157, y: -0, z: -0, w: 0.8330381}
+  m_LocalPosition: {x: -6.1400003, y: 20.63, z: -5.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6012155576662454919}
-  m_LocalEulerAnglesHint: {x: 49.029, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 67.176, y: 0, z: 0}
 --- !u!114 &5505196834386543084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6012155576662454919}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CameraSwitcherinator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6251384741277540888}
   - component: {fileID: 4021221068032998527}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VirtualCamera1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,13 +245,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4485711499452660636}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.41492024, y: -0, z: -0, w: 0.9098578}
-  m_LocalPosition: {x: 4.7, y: 10.09, z: -8.210001}
+  m_LocalRotation: {x: 0.5532157, y: -0, z: -0, w: 0.8330381}
+  m_LocalPosition: {x: 4.7, y: 20.63, z: -5.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6012155576662454919}
-  m_LocalEulerAnglesHint: {x: 49.029, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 67.176, y: 0, z: 0}
 --- !u!114 &4021221068032998527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
+    Enabled: 1
     m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 8603494729025974456}
   - component: {fileID: 804957262057145501}
   - component: {fileID: 2986961269868652757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,8 +323,8 @@ Transform:
   m_GameObject: {fileID: 5180165198521027392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.63, z: -7.1}
-  m_LocalScale: {x: 1, y: 13.360702, z: 10.065035}
+  m_LocalPosition: {x: 0, y: 8.57, z: -8.5}
+  m_LocalScale: {x: 1, y: 22.977232, z: 10.065035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6012155576662454919}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 7004240432107138450}
   - component: {fileID: 3159814804875299844}
   - component: {fileID: 1807368453635272325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,8 +431,8 @@ Transform:
   m_GameObject: {fileID: 6765146215990672110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.63, z: 9.03}
-  m_LocalScale: {x: 1, y: 13.360702, z: 10.065035}
+  m_LocalPosition: {x: 0, y: 8.57, z: 5.94}
+  m_LocalScale: {x: 1, y: 22.977232, z: 10.065035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6012155576662454919}
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 8189824043575192601}
   - component: {fileID: 7537768102135733868}
   - component: {fileID: 6793652123303721257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CameraSwitcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ Transform:
   m_GameObject: {fileID: 8691184861863540172}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 0, z: 0}
+  m_LocalPosition: {x: -13.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -563,8 +563,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13.890634, y: 8.024924, z: 24.767797}
-  m_Center: {x: 6.355184, y: 3.5124626, z: 0.50819683}
+  m_Size: {x: 13.890634, y: 8.024924, z: 25}
+  m_Center: {x: 6.355184, y: 3.5124626, z: 0.8}
 --- !u!114 &6793652123303721257
 MonoBehaviour:
   m_ObjectHideFlags: 0
