@@ -17,12 +17,14 @@ public class CameraController : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
-        _camera.enabled = true;
+        if (other.tag == "Player")
+            _camera.enabled = true;
     }
-    public void OnTriggerExit()
+    public void OnTriggerExit(Collider other)
     {
-        _camera.enabled = false;
+        if (other.tag == "Player")
+            _camera.enabled = false;
     }
 }

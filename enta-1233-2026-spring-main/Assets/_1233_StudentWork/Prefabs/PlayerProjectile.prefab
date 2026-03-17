@@ -77,6 +77,7 @@ MonoBehaviour:
   _speed: 20
   _lifetime: 5
   _useGravity: 0
+  _particles: {fileID: 2604351044452706275, guid: e7cb7c67188f122449c4bc4d2f928949, type: 3}
 --- !u!1001 &3599525415683884427
 PrefabInstance:
   m_ObjectHideFlags: 0
