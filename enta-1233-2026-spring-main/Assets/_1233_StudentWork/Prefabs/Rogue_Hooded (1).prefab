@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8400853936275459234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upperarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3141323576305574379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lowerarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5588275799869340258}
   - component: {fileID: 5331748652228083462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_Cape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2482310667346819108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hand.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 233569560098614805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: toes.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1103698692768692338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upperarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8019782532112525739}
   - component: {fileID: 2257860608432195945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6804434315315238972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lowerleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839024770021205939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wrist.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4322970387400644758}
   - component: {fileID: 3629473386186666681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9155920705862115139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3526682118630194702}
   - component: {fileID: 4737772911491032967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_ArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 3816822291961150591}
   - component: {fileID: 5240174344574623914}
   - component: {fileID: 8461478648816922070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,8 +726,8 @@ Transform:
   m_GameObject: {fileID: 3721776661536732194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.10397, z: 1}
+  m_LocalPosition: {x: 0, y: 0.783, z: 7.48}
+  m_LocalScale: {x: 0.059092373, y: 0.0025685788, z: 14.417781}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5352439491636997615}
@@ -763,7 +763,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f2eb0c5f3ed1bde4a83dc38b8b51217b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -802,7 +802,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -816,7 +816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2527080712387023129}
   - component: {fileID: 5858809521274897091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_LegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267067309999098881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: handslot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429964682756863100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wrist.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3469015394301292420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upperleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6029595259120652138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: foot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +1053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2443593932965753994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lowerleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,9 +1085,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6816153215256112455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rig_Medium
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1117,7 +1117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389205525220286189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lowerarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7207081853438188881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upperleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6768310477437260448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3638032902806184561}
   - component: {fileID: 8930536331706733726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_ArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3478280548606499627}
   - component: {fileID: 6183876654303564619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_LegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1438,7 +1438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9105142636402650216}
   - component: {fileID: 1401670175599709939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: JumpAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3910256507971071856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: handslot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1605,7 @@ GameObject:
   - component: {fileID: 7835036012667268204}
   - component: {fileID: 8608622715627124168}
   - component: {fileID: 4595307304350595454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rogue_Hooded (1)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1636,8 +1636,8 @@ Transform:
   - {fileID: 4322970387400644758}
   - {fileID: 20798749538334928}
   - {fileID: 9105142636402650216}
-  - {fileID: 7479226928103141970}
   - {fileID: 9155920705862115139}
+  - {fileID: 7479226928103141970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2146225077339382990
@@ -1706,6 +1706,8 @@ MonoBehaviour:
   _gravMult: 3
   jumpForce: 7
   _maxJumps: 2
+  _weapon: {fileID: 4595307304350595454}
+  _target: {fileID: 3721776661536732194}
   _animator: {fileID: 2146225077339382990}
 --- !u!114 &1152613139065055260
 MonoBehaviour:
@@ -1852,7 +1854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7519269041563605625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hand.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9058295760269678719}
   - component: {fileID: 8109116990642341027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RogueHooded_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1995,7 +1997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306962519322519602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2028,7 +2030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20798749538334928}
   - component: {fileID: 6852355001758483260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FootstepAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2156,7 +2158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6821006452298957359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2187,7 +2189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3260143445314072723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: foot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2219,7 +2221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3610002841705504100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2251,7 +2253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1319063977903323569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2285,7 +2287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7390204894115134360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: toes.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}

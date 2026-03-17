@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 2482236650335562673}
+    - target: {fileID: 3045317803800417080, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
+      propertyPath: _maxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4120705967336715416, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
       propertyPath: m_Layer
       value: 8

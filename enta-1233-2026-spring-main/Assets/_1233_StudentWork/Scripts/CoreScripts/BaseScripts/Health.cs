@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
 
     public void ApplyDamage(DamageInfo info)
     {
-        if (IsDead || _isInvulnerable)
+        if (!IsDead || !_isInvulnerable)
         {
             CurrentHealth -= info.Amount;
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0, _maxHealth);

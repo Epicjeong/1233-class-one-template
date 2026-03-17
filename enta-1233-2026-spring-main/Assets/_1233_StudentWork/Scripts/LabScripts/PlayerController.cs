@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded() => _characterControl.isGrounded;
     
     [SerializeField] private ProjectileWeapon _weapon;
+    [SerializeField] private GameObject _target;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -111,10 +112,16 @@ public class PlayerController : MonoBehaviour
 
     public void Aim(InputAction.CallbackContext context)
     {
-        if(context.canceled)
+        if (_weapon.CanFire)
         {
-            _weapon.Fire(_direction);
+            _target.SetActive(true);
+            if (context.canceled)
+            {
+                _weapon.Fire(_target.transform.position);
+                _target.SetActive(false);
+            }
         }
+        
     }
 
     private IEnumerator WaitForLanding()

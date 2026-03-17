@@ -19,10 +19,10 @@ public class CameraController : MonoBehaviour
 
     public void OnTriggerEnter()
     {
-        _camera.enabled = false;
+        _camera.enabled = true;
     }
     public void OnTriggerExit()
     {
-        _camera.enabled = true;
+        _camera.enabled = false;
     }
 }
