@@ -111,14 +111,14 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Aim(InputAction.CallbackContext context)
-    {
-        if (_weapon.CanFire)
+    {   
+        _target.SetActive(true);
+        if (context.canceled)
         {
-            _target.SetActive(true);
-            if (context.canceled)
+            _target.SetActive(false);
+            if (_weapon.CanFire)
             {
                 _weapon.Fire(_target.transform.position);
-                _target.SetActive(false);
             }
         }
         
