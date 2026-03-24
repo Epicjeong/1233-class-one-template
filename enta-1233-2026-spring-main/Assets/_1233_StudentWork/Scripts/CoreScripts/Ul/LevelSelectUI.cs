@@ -21,7 +21,7 @@ public class LevelSelectUI : MenuBase
         UIMgr.Instance.HideMenu(GameMenus.LevelSelectMenu);
     }
 
-    private void BuildEntries()
+    public void BuildEntries()
     {
         var levels = LevelMgr.Instance.LevelSceneNames;
         if (levels.Length == 0 ) return;
