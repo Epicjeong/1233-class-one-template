@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int _damage = 10;
 
-    // Update is called once per frame
-    void Update()
+    public void ExplosionDamage(Collider collision)
     {
-        
+        var damageReciever = collision.gameObject.GetComponent<IDamageReciever>();
+        if (damageReciever != null)
+        {
+            var info = new DamageInfo
+            {
+                Amount = _damage
+            };
+            damageReciever.ApplyDamage(info);
+        }
+        Destroy(gameObject);
     }
 }
