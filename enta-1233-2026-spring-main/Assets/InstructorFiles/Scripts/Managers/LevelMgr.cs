@@ -10,11 +10,22 @@ public class LevelMgr : Singleton<LevelMgr>
     [SerializeField] private string[] _levelSceneNames;
 
     private int _currentLevelIndex;
+    public string[] LevelSceneNames => _levelSceneNames;
     public bool IsLevelLoaded { get; private set; }
+
+    public void SetCurrentLevel(int currentlevelIndex)
+    {
+        _currentLevelIndex = currentlevelIndex;
+    }
     public void LoadCurrentLevel()
     {
         IsLevelLoaded = false;
         StartCoroutine(LoadLevelRoutine());
+    }
+
+    public void LoadNextLevel()
+    {
+        _currentLevelIndex = Mathf.Min(_currentLevelIndex + 1, _levelSceneNames.Length - 1);
     }
 
     private IEnumerator LoadLevelRoutine()
