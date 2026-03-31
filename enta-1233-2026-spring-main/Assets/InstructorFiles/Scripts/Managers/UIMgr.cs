@@ -21,6 +21,7 @@ public class UIMgr : Singleton<UIMgr>
     [SerializeField] private MenuBase _inGameUIPrefab;
     [SerializeField] private MenuBase _gameOverMenuPrefab;
     [SerializeField] private MenuBase _levelCompleteMenuPrefab;
+    [SerializeField] private MenuBase _levelSelectUIPrefab;
 
     private readonly Dictionary<GameMenus, MenuBase> _menuInstances = new();
     private readonly Stack<MenuBase> _activeMenus = new();
@@ -231,6 +232,9 @@ public class UIMgr : Singleton<UIMgr>
                 break;
             case GameMenus.LevelCompleteMenu:
                 menu = _levelCompleteMenuPrefab;
+                break;
+            case GameMenus.LevelSelectMenu:
+                menu = _levelSelectUIPrefab;
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(menuType), menuType, null);
