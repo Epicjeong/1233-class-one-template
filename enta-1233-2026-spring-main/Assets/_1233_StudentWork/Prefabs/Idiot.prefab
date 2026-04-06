@@ -85,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6665113451827133617, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4440391129739160595}
+    - targetCorrespondingSourceObject: {fileID: 6665113451827133617, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4249310314651871370}
     - targetCorrespondingSourceObject: {fileID: 4120705967336715416, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5270061847661170991}
@@ -127,6 +130,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3445f783e06571f4e9ab0debcb4c0c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4249310314651871370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188537773094930112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50785c8c47333d4495de457775a760e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCanvas: {fileID: 0}
+  healthBar: {fileID: 0}
+  objectToFollow: {fileID: 0}
 --- !u!114 &7368612442572728649 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3045317803800417080, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
