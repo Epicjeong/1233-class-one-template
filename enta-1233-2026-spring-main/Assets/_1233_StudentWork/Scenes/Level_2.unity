@@ -1398,6 +1398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 359306453502011720, guid: 98e7a365d6ac7164b82edca5650f8ef6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1188537773094930112, guid: 98e7a365d6ac7164b82edca5650f8ef6, type: 3}
       propertyPath: m_Name
       value: Idiot
