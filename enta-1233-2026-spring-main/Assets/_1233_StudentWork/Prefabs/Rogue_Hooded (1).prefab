@@ -1708,6 +1708,7 @@ MonoBehaviour:
   _maxJumps: 2
   _weapon: {fileID: 4595307304350595454}
   _target: {fileID: 3721776661536732194}
+  _health: {fileID: 7835036012667268204}
   _animator: {fileID: 2146225077339382990}
 --- !u!114 &1152613139065055260
 MonoBehaviour:

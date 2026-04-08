@@ -78,6 +78,14 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 3757674285711563355}
+    - target: {fileID: 3045317803800417080, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
+      propertyPath: _maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045317803800417080, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
+      propertyPath: _isInvulnerable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4120705967336715416, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -170,17 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83e4414df3bfe2498b8f251eec8e8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3196597583375909345 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2777350818025064774, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
-  m_PrefabInstance: {fileID: 781296789125335207}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6244386110289310742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86e8d09900cd18648bc7cc44f45d2d16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3744753487822978111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4120705967336715416, guid: 68eb9f366bc544e46b1f43b56dea321b, type: 3}
@@ -233,7 +230,7 @@ MonoBehaviour:
   _weapon: {fileID: 4359711322165667262}
   _detection: {fileID: 440365071175289192}
   _rotater: {fileID: 8140291732614236301}
-  _animatior: {fileID: 3196597583375909345}
+  _animDriver: {fileID: 0}
   _mode: 1
   _fixedAxis: {x: 0, y: 0, z: 1}
 --- !u!114 &7201975226216572106
