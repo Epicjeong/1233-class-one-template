@@ -33,10 +33,43 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ProjectileWeapon _weapon;
     [SerializeField] private GameObject _target;
 
+    [SerializeField] private Health _health;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Awake()
     {
-        
+        if (_health == null) GetComponent<Health>();
+    }
+
+    public void OnEnable()
+    {
+        if (_health != null)
+        {
+            _health.OnDamaged += HandleDamaged;
+            _health.OnDied += HandleDied;
+        }
+    }
+
+    public void OnDisable()
+    {
+        if (_health != null)
+        {
+            _health.OnDamaged -= HandleDamaged;
+            _health.OnDied -= HandleDied;
+        }
+    }
+
+    private void HandleDamaged(DamageInfo info)
+    {
+        if (_health != null)
+        {
+
+        }
+    }
+    private void HandleDied()
+    {
+        Debug.Log("You are dead, not big suprise");
+        GameMgr.Instance.GameOver();
     }
 
     // Update is called once per frame

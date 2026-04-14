@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ExplosiveBarrelHit : MonoBehaviour, IDamageReciever
 {
+    [SerializeField] private AudioSource _explosion;
     [SerializeField] private SphereOverlapNonAlloc _overlap;
     #region Particle
     [SerializeField] private GameObject _particles;
@@ -16,5 +17,7 @@ public class ExplosiveBarrelHit : MonoBehaviour, IDamageReciever
     {
         _overlap.CheckOverlap();
         SpawnImpact(transform.position);
+        _explosion?.Play();
+        Destroy(gameObject);
     }
 }

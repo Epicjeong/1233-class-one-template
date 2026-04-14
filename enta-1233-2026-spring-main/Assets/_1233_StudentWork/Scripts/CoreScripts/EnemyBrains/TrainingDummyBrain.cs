@@ -4,6 +4,7 @@ public class TrainingDummyBrain : MonoBehaviour
 {
     [SerializeField] private Health _health;
     [SerializeField] private EnemyAnimDriver _animDriver;
+    [SerializeField] private EnemyHealthBar _healthBar;
     [SerializeField] private float _resetDelay = 2f;
     [SerializeField] private bool _autoReset = true;
 
@@ -11,6 +12,7 @@ public class TrainingDummyBrain : MonoBehaviour
     {
         if (_health == null) GetComponent<Health>();
         if (_animDriver == null) GetComponent<EnemyAnimDriver>();
+        _healthBar.SetHealthBarData();
     }
 
     public void OnEnable()

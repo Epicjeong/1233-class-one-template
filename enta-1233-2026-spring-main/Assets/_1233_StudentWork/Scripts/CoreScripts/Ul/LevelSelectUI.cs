@@ -16,7 +16,7 @@ public class LevelSelectUI : MenuBase
         BuildEntries();
     }
 
-    private void ButtonBack()
+    public void ButtonBack()
     {
         UIMgr.Instance.HideMenu(GameMenus.LevelSelectMenu);
     }

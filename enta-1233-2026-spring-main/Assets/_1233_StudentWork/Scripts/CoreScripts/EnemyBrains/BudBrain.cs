@@ -101,6 +101,8 @@ public class BudBrain : MonoBehaviour
 
     private void HandleDied()
     {
+        _animDriver?.TriggerDie();
         enabled = false;
+        Debug.Log("uhadfa");
     }
 }
