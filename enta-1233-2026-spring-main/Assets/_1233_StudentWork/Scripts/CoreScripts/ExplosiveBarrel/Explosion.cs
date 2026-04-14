@@ -15,6 +15,5 @@ public class Explosion : MonoBehaviour
             };
             damageReciever.ApplyDamage(info);
         }
-        Destroy(gameObject);
     }
 }

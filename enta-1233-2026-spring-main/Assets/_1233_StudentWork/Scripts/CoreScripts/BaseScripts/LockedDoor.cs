@@ -2,16 +2,12 @@ using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
 {
+    [SerializeField] private int _keysRequired;
+    public int _keys;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void GetKeys()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _keys++;
+        if (_keys == _keysRequired) Destroy(gameObject);
     }
 }
