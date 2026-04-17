@@ -13,7 +13,7 @@ public class Settings : MenuBase
 
     private void OnEnable()
     {
-        _backButton.Select();
+        //_backButton.Select();
     }
 
     public override GameMenus MenuType()

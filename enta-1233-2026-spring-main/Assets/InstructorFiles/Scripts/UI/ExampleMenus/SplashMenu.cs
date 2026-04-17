@@ -33,5 +33,6 @@ public class SplashMenu : MenuBase
     {
         _onAnimationComplete?.Invoke();
         _onAnimationComplete = null;
+        AudioMgr.Instance.PlayMusic(0, 1);
     }
 }

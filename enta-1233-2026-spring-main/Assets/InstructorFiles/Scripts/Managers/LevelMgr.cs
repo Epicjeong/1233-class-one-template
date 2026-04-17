@@ -38,6 +38,8 @@ public class LevelMgr : Singleton<LevelMgr>
 
         while (asyncOperation is { isDone: false}) yield return null;
 
+        AudioMgr.Instance.PlayMusic((AudioMgr.MusicTypes)1, 1);
+
         Debug.Log("LevelMgr: level loaded");
 
         IsLevelLoaded = true;

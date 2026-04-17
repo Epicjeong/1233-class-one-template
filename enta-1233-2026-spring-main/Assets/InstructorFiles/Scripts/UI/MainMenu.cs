@@ -17,7 +17,8 @@ public class MainMenu : MenuBase
 
     private void OnEnable()
     {
-        _startButton.Select();
+        //_startButton.Select();
+
     }
 
     public void ButtonStart()
