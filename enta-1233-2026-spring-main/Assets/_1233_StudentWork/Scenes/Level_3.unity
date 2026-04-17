@@ -2199,7 +2199,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press j to throw a dagger
+  m_text: 'Barrels explode when hit
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2264,7 +2266,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.1581984, y: 0, z: 1.7598209, w: 0}
+  m_margin: {x: -2.1581984, y: 0, z: 0.2430458, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -2491,6 +2493,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2176383031255082156, guid: bea59e4c5375a814c8d8eeca9b706e1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154723812700896695, guid: bea59e4c5375a814c8d8eeca9b706e1b, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8248546065900871340, guid: bea59e4c5375a814c8d8eeca9b706e1b, type: 3}
